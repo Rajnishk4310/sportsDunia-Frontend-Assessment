@@ -116,7 +116,7 @@ const App = () => {
       <div className="overflow-y-auto" onScroll={handleScroll}>
         <table className="min-w-full bg-white border border-gray-300">
           <thead>
-            <tr>
+            <tr className="text-white ">
               {[
                 { label: "CD Rank", criteria: "cdRank" },
                 { label: "Colleges", criteria: "" },
@@ -247,23 +247,28 @@ const App = () => {
                   </button>
                 </td>
                 <td className="py-4 px-6 border-r">
-                  <div>
-                    <span className="text-orange-500 font-bold">●</span>{" "}
-                    {college.userReviews.rating} / 10
+                  <div className="flex items-center space-x-2">
+                    <span className="text-orange-500 text-xl font-bold">●</span>
+                    <span className="text-lg font-semibold text-gray-400">
+                      {college.userReviews.rating} / 10
+                    </span>
                   </div>
-                  <div className="text-xs">
-                    Based on {college.userReviews.numberOfReviews} Users
-                    <div>Reviews</div>
+                  <div className="text-xs text-gray-600 mt-1">
+                    Based on {college.userReviews.numberOfReviews} users
+                    <div className="text-xs">Reviews</div>
                   </div>
-                  <button className="bg-amber-100 text-yellow-600 px-2 py-1 rounded text-xs mt-2">
-                    ✓ Best in Social Life ⋎
-                  </button>
+                        <button className="text-xs text-orange-500 bg-amber-50">✓ {college.userReviews.best[0]} ⋎</button>
                 </td>
+
                 <td className="py-4 px-6">
-                  <div className="text-[#78bec3] font-bold">
-                    #{college.ranking.overallRank}
+                  <div className="text-gray-400 font-bold">
+                    #{college.ranking.rank}/
+                    <span className="text-orange-400">
+                      {college.ranking.total}
+                    </span>{" "}
+                    in India
                   </div>
-                  <div>India Today 2023</div>
+                  <div>{college.ranking.by}</div>
                   <RankingsDropdown
                     rankingsList={college.ranking.rankingsList}
                   />
