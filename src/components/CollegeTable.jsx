@@ -1,50 +1,56 @@
-import TableHeader from "./TableHeader";
-import CollegeRow from "./CollegeRow";
-
+import CollegeRow from "./CollegeRow"
 const CollegeTable = ({
-  data,
-  searchTerm,
+  filteredData,
+  visibleRows,
   sortCriteria,
   sortOrder,
   handleSort,
-  handleSearch,
-  visibleRows,
-  handleScroll,
-  loadMoreRows,
-  selectedBranch,
+  toggleDropdown,
   handleBranchChange,
+  selectedBranch,
+  dropdownOpen,
 }) => {
   return (
-    <div className="overflow-y-auto" onScroll={handleScroll}>
-      <table className="min-w-full bg-white border border-gray-300">
-        <TableHeader
-          sortCriteria={sortCriteria}
-          sortOrder={sortOrder}
-          handleSort={handleSort}
-        />
-        <tbody>
-          {data.slice(0, visibleRows).map((college) => (
-            <CollegeRow
-              key={college.id}
-              college={college}
-              selectedBranch={selectedBranch}
-              handleBranchChange={handleBranchChange}
-            />
+    <table className="min-w-full bg-white border border-gray-300">
+      <thead>
+        <tr className="text-white ">
+          {[
+            { label: "CD Rank", criteria: "cdRank" },
+            { label: "Colleges", criteria: "" },
+            { label: "Course Fees", criteria: "courseFees" },
+            { label: "Placement", criteria: "placement.avgPackage" },
+            { label: "User Reviews", criteria: "userReviews.rating" },
+            { label: "Ranking", criteria: "" },
+          ].map((header) => (
+            <th
+              key={header.label}
+              className={`py-3 px-4 border-b bg-[#78bec3] ${
+                header.criteria ? "cursor-pointer" : ""
+              } sticky top-0`}
+              onClick={() => header.criteria && handleSort(header.criteria)}
+            >
+              {header.label}{" "}
+              {sortCriteria === header.criteria &&
+                (sortOrder === "asc" ? "↑" : "↓")}
+            </th>
           ))}
-        </tbody>
-      </table>
-      {visibleRows < data.length && (
-        <div className="text-center py-4">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-md"
-            onClick={loadMoreRows}
-          >
-            Load More
-          </button>
-        </div>
-      )}
-    </div>
+        </tr>
+      </thead>
+      <tbody>
+        {filteredData.slice(0, visibleRows).map((college) => (
+          <CollegeRow
+            key={college.id}
+            college={college}
+            toggleDropdown={toggleDropdown}
+            handleBranchChange={handleBranchChange}
+            selectedBranch={selectedBranch}
+            dropdownOpen={dropdownOpen}
+          />
+        ))}
+      </tbody>
+    </table>
   );
 };
+
 
 export default CollegeTable;

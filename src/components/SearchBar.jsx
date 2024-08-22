@@ -1,7 +1,5 @@
-
-
-const SearchBar = ({ searchTerm, handleSearch }) => (
-  <>
+const SearchBar = ({ searchTerm, handleSearch }) => {
+  return (
     <input
       type="text"
       placeholder="Search College"
@@ -10,7 +8,8 @@ const SearchBar = ({ searchTerm, handleSearch }) => (
       className="mb-4 p-2 w-full border rounded shadow-md"
       aria-label="Search College"
     />
-  </>
-);
+  );
+};
+
 
 export default SearchBar;
