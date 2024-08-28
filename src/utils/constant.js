@@ -674,12 +674,246 @@ export const cdRank = [
   },
   {
     id: 10,
-    collegeName: "Jadavpur University",
-    address: "Kolkata, West Bengal 700032",
+    collegeName: "Nit Patna",
+    address: "Ashok Rajpath, Mahendru, Patna, Bihar (800005)",
     cdRank: 10,
     collegeLogo:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUyXa7DAU1x9QUyAJAWVgkKdfjA6k0JedX8g&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjGZCk2pgkCNIbk6yL2r1a4z0Irk6hOjhESQ&s",
     courseFees: "1,20,000",
+    featured: true,
+    branches: [
+      {
+        branchName: "Computer Science and Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1400,
+          2020: 1350,
+          2021: 1300,
+          2022: 1250,
+          2023: 400,
+        },
+      },
+      {
+        branchName: "Electronics and Communication Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1300,
+          2020: 1250,
+          2021: 1200,
+          2022: 1150,
+          2023: 800,
+        },
+      },
+      // ... more branches
+    ],
+    placement: {
+      avgPackage: "9,00,000",
+      highestPackage: "25,00,000",
+    },
+    userReviews: {
+      rating: 9.6,
+      numberOfReviews:696,
+      best: [
+        "Active student life",
+        "Good faculty",
+        "Strong research opportunities",
+        "Great infrastructure",
+      ],
+    },
+    ranking: {
+      rank: "121th",
+      total: 201,
+      by: "NIRF 2023",
+      rankingsList: [
+        "The Week: 10th in 2023",
+        "NIRF: 10th in 2023",
+        "India Today: 10th in 2023",
+        "QS: 10th in 2023",
+        "Times Higher Education: 10th in 2023",
+      ],
+    },
+  },
+  {
+    id: 11,
+    collegeName: "Vellore Institute Of Technology",
+    address: "Brahmapuram, Vellore - 632014",
+    cdRank: 11,
+    collegeLogo:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fctn2jq8guRd3Sfgxmv9p-ftsSu0YXulGQ&s",
+    courseFees: "15,20,000",
+    featured: true,
+    branches: [
+      {
+        branchName: "Computer Science and Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1400,
+          2020: 1350,
+          2021: 1300,
+          2022: 1250,
+          2023: 1600,
+        },
+      },
+      {
+        branchName: "Electronics and Communication Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1300,
+          2020: 1250,
+          2021: 1200,
+          2022: 1150,
+          2023: 800,
+        },
+      },
+      // ... more branches
+    ],
+    placement: {
+      avgPackage: "9,00,000",
+      highestPackage: "25,00,000",
+    },
+    userReviews: {
+      rating: 7.1,
+      numberOfReviews:1896,
+      best: [
+        "Great infrastructure",
+        "Active student life",
+        "Good faculty",
+        "Strong research opportunities",
+      ],
+    },
+    ranking: {
+      rank: "321th",
+      total: 2209,
+      by: "NIRF 2023",
+      rankingsList: [
+        "The Week: 10th in 2023",
+        "NIRF: 10th in 2023",
+        "India Today: 10th in 2023",
+        "QS: 10th in 2023",
+        "Times Higher Education: 10th in 2023",
+      ],
+    },
+  },
+  {
+    id: 12,
+    collegeName: "Nit Silchar",
+    address: "Ashok Rajpath, Mahendru, Patna, Bihar (800005)",
+    cdRank: 12,
+    collegeLogo:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/National_Institute_Of_Technology_Silchar_Logo.svg/1200px-National_Institute_Of_Technology_Silchar_Logo.svg.png",
+    courseFees: "1,25,000",
+    featured: false,
+    branches: [
+      {
+        branchName: "Computer Science and Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1400,
+          2020: 1350,
+          2021: 1300,
+          2022: 1250,
+          2023: 1200,
+        },
+      },
+      {
+        branchName: "Electronics and Communication Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1100,
+          2020: 1250,
+          2021: 1200,
+          2022: 1150,
+          2023: 1100,
+        },
+      },
+    ],
+    placement: {
+      avgPackage: "7,00,000",
+      highestPackage: "21,00,000",
+    },
+    userReviews: {
+      rating: 8.9,
+      numberOfReviews:996,
+      best: [
+        "Active student life",
+        "Great infrastructure",
+        "Good faculty",
+        "Strong research opportunities",
+      ],
+    },
+    ranking: {
+      rank: "881th",
+      total: 2081,
+      by: "NIRF 2023",
+      rankingsList: [
+        "NIRF: 10th in 2023",
+        "The Week: 10th in 2023",
+        "India Today: 10th in 2023",
+        "QS: 10th in 2023",
+        "Times Higher Education: 10th in 2023",
+      ],
+    },
+  },
+  {
+    id: 13,
+    collegeName: "Manit Bhopal",
+    address: "Bhopal, Madhya Pradesh, India 462003",
+    cdRank: 13,
+    collegeLogo:
+      "https://upload.wikimedia.org/wikipedia/en/4/4f/Maulana_Azad_National_Institute_of_Technology_Logo.png",
+    courseFees: "1,00,000",
+    featured: false,
+    branches: [
+      {
+        branchName: "Electronics and Communication Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1300,
+          2020: 1250,
+          2021: 1200,
+          2022: 1150,
+          2023: 1100,
+        },
+      },
+      {
+        branchName: "Computer Science and Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1400,
+          2020: 1350,
+          2021: 1300,
+          2022: 1250,
+          2023: 1200,
+        },
+      },
+    ],
+    placement: {
+      avgPackage: "11,00,000",
+      highestPackage: "25,00,000",
+    },
+    userReviews: {
+      rating: 7.6,
+      numberOfReviews:896,
+      best: [
+        "Good faculty",
+        "Active student life",
+        "Strong research opportunities",
+        "Great infrastructure",
+      ],
+    },
+    ranking: {
+      rank: "121th",
+      total: 2101,
+      by: "The Week 2020",
+      rankingsList: [
+        "NIRF: 10th in 2023",
+        "The Week: 10th in 2023",
+        "India Today: 10th in 2023",
+        "QS: 10th in 2023",
+        "Times Higher Education: 10th in 2023",
+      ],
+    },
+  },
+  {
+    id: 14,
+    collegeName: "BIT Mesra",
+    address: "Mesra, Jharkhand 835215",
+    cdRank: 14,
+    collegeLogo:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhY3DZmytD_txEW6aJwMtktYVIgbdUMeoYQA&s",
+    courseFees: "8,20,000",
     featured: true,
     branches: [
       {
@@ -702,7 +936,64 @@ export const cdRank = [
           2023: 1200,
         },
       },
-      // ... more branches
+    ],
+    placement: {
+      avgPackage: "7,00,000",
+      highestPackage: "19,00,000",
+    },
+    userReviews: {
+      rating: 8.6,
+      numberOfReviews:696,
+      best: [
+        "Good faculty",
+        "Active student life",
+        "Strong research opportunities",
+        "Great infrastructure",
+      ],
+    },
+    ranking: {
+      rank: "1121th",
+      total: 2019,
+      by: "NIndia Today 2022",
+      rankingsList: [
+        "NIRF: 10th in 2023",
+        "The Week: 10th in 2023",
+        "India Today: 10th in 2023",
+        "QS: 10th in 2023",
+        "Times Higher Education: 10th in 2023",
+      ],
+    },
+  },
+  {
+    id: 15,
+    collegeName: "Jadavpur University",
+    address: "Kolkata, West Bengal 700032",
+    cdRank: 15,
+    collegeLogo:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUyXa7DAU1x9QUyAJAWVgkKdfjA6k0JedX8g&s",
+    courseFees: "1,20,000",
+    featured: false,
+    branches: [
+      {
+        branchName: "Electronics and Communication Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1300,
+          2020: 1250,
+          2021: 1200,
+          2022: 1150,
+          2023: 1100,
+        },
+      },
+      {
+        branchName: "Computer Science and Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1400,
+          2020: 1350,
+          2021: 1300,
+          2022: 1250,
+          2023: 1200,
+        },
+      },
     ],
     placement: {
       avgPackage: "11,00,000",
