@@ -1022,4 +1022,120 @@ export const cdRank = [
       ],
     },
   },
+  {
+    id: 16,
+    collegeName: "Anna University",
+    address: "Sardar Patel Road Anna University Chennai - 600 025",
+    cdRank: 16,
+    collegeLogo:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYJCLRLkuiPuk-6EXsNckMny5g-srzI2PUkA&s",
+    courseFees: "1,11,000",
+    featured: true,
+    branches: [
+      {
+        branchName: "Computer Science and Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1400,
+          2020: 1350,
+          2021: 1300,
+          2022: 1250,
+          2023: 900,
+        },
+      },
+      {
+        branchName: "Electronics and Communication Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1300,
+          2020: 1250,
+          2021: 1200,
+          2022: 1150,
+          2023: 1100,
+        },
+      },
+    ],
+    placement: {
+      avgPackage: "15,00,000",
+      highestPackage: "31,00,000",
+    },
+    userReviews: {
+      rating: 9.3,
+      numberOfReviews:696,
+      best: [
+        "Strong research opportunities",
+        "Good faculty",
+        "Active student life",
+        "Great infrastructure",
+      ],
+    },
+    ranking: {
+      rank: "99th",
+      total: 501,
+      by: "The Week",
+      rankingsList: [
+        "India Today: 10th in 2023",
+        "NIRF: 10th in 2023",
+        "The Week: 10th in 2023",
+        "QS: 10th in 2023",
+        "Times Higher Education: 10th in 2023",
+      ],
+    },
+  },
+  {
+    id: 17,
+    collegeName: "IIEST Shibpur ",
+    address: "Botanical Garden Area, Howrah, West Bengal 711103",
+    cdRank: 17,
+    collegeLogo:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgBrl9kknlKMqWm0hDJsl_bJeekbwIum23bg&s",
+    courseFees: "1,20,000",
+    featured: false,
+    branches: [
+      {
+        branchName: "Electronics and Communication Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1300,
+          2020: 1250,
+          2021: 1200,
+          2022: 1150,
+          2023: 1600,
+        },
+      },
+      {
+        branchName: "Computer Science and Engineering",
+        jeeAdvancedCutoffs: {
+          2019: 1400,
+          2020: 1350,
+          2021: 1300,
+          2022: 1250,
+          2023: 1200,
+        },
+      },
+    ],
+    placement: {
+      avgPackage: "9,00,000",
+      highestPackage: "23,00,000",
+    },
+    userReviews: {
+      rating: 8.9,
+      numberOfReviews:876,
+      best: [
+        "Active student life",
+        "Good faculty",
+        "Strong research opportunities",
+        "Great infrastructure",
+      ],
+    },
+    ranking: {
+      rank: "712",
+      total: 1147,
+      by: "QS 2023",
+      rankingsList: [
+        "NIRF: 10th in 2023",
+        "The Week: 10th in 2023",
+        "India Today: 10th in 2023",
+        "QS: 10th in 2023",
+        "Times Higher Education: 10th in 2023",
+      ],
+    },
+  },
 ];
